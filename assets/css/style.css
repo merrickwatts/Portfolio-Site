@@ -63,12 +63,12 @@ header nav ul li a:hover {
 /* styling for about me section */
 .about-me-section {
     display: flex;
+    justify-content: space-evenly;
     margin-top: 15px;
 }
 .about-me-section h2 {
     flex-wrap: nowrap;
     padding: 0 10px;
-    display: inline-block;
     padding-bottom: 100px;
 }
 .about-me-section p {
