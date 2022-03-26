@@ -16,23 +16,32 @@ body {
 
 }
 header {
-    padding: 5px 35px;
+    padding: 1% 10%;
     background-image: linear-gradient(to right, var(--background-color-one), rgba(100, 100, 100, 1));
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     z-index: 9999;
-    }
+}
+h2 {
+    font-size: xx-large;
+}
+p {
+    font-size: large;
+}
+a {
+    font-size: large;
+}
 header h1 {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
     font-weight: bold;
     margin: 10px;
-    font-size: 36px;
+    font-size: xx-large;
     color: var(--background-color-two);
 }
 header nav {
     margin: 7px 0;
-  }
+}
 header nav ul {
     padding-top: 15px;
     display: flex;
@@ -44,10 +53,9 @@ header nav ul {
 header nav ul li a {
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.25);
     padding: 10px 15px;
-    font-size: 1.55vw;
+    font-size: x-large;
     color: var(--background-color-two);
     text-decoration: none;
-    font-size: medium;
 }
 header h1:hover{
       color: var(--primary-color);
@@ -67,22 +75,17 @@ header nav ul li a:hover {
     margin-top: 15px;
 }
 .about-me-section h2 {
-    flex-wrap: nowrap;
     padding: 0 10px;
     padding-bottom: 100px;
 }
 .about-me-section p {
-    max-width: 450px;
-    left: 150px;
     padding: 0 10px;
     border-left: 5px var(--background-color-one) solid;
     border-right: 5px var(--background-color-one) solid;
 }
 .personal-photo {
     margin: 0 10px;
-    left: 150px;
-    height: 25%;
-    width: 25%;
+    max-width: 25%;
     border: 3px var(--background-color-one) solid;
     border-radius: 5%;
 }
@@ -116,7 +119,7 @@ header nav ul li a:hover {
     box-shadow: 5px 5px var(--primary-color);
 }
 .run-buddy h3 {
-    font-size: medium;
+    font-size: large;
     padding: 0 5px;
     background-color: rgba(150, 150, 150, .75);
     position: absolute;
@@ -147,7 +150,7 @@ header nav ul li a:hover {
 }
 .placeholder section h3 {
     color: darkgray;
-    font-size: x-small;
+    font-size: medium;
 }
 /* end of 'my work' styling section */
 
@@ -175,4 +178,29 @@ header nav ul li a:hover {
 .contact-me a:hover {
     color: var(--primary-color);
     border-bottom: 3px var(--primary-color) solid;
+}
+
+@media screen and (max-width: 980px) {
+    header nav ul li a {
+        font-size: x-large;
+    }
+    .run-buddy h3 {
+        font-size: large;
+    }
+}
+@media screen and (max-width: 768px) {
+    header nav ul li a {
+        font-size: medium;
+    }
+    .run-buddy h3 {
+        font-size: medium;
+    }
+}
+@media screen and (max-width: 575px){
+    header nav ul li a {
+        font-size: medium;
+    }
+    .run-buddy h3 {
+        font-size: medium;
+    }
 }
