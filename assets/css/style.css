@@ -48,21 +48,131 @@ header nav ul li a {
     color: var(--background-color-two);
     text-decoration: none;
     font-size: medium;
-  }
-  header h1:hover{
+}
+header h1:hover{
       color: var(--primary-color);
       text-shadow: none;
-  }
-  header nav ul li a:hover {
-    /* background-color: rgba( 245, 245, 245, .25); */
+}
+header nav ul li a:hover {
     border-bottom: 3px solid var(--primary-color);
     color: var(--primary-color);
     font-weight: 600;
     text-shadow: none;
-  }
-  .personal-photo {
-      height: 30%;
-      width: 30%;
-      border: 3px var(--primary-color) solid;
-      border-radius: 50%;
-  }
+}
+
+/* styling for about me section */
+.about-me-section {
+    display: flex;
+    margin-top: 15px;
+}
+.about-me-section h2 {
+    flex-wrap: nowrap;
+    padding: 0 10px;
+    display: inline-block;
+    padding-bottom: 100px;
+}
+.about-me-section p {
+    max-width: 450px;
+    left: 150px;
+    padding: 0 10px;
+    border-left: 5px var(--background-color-one) solid;
+    border-right: 5px var(--background-color-one) solid;
+}
+.personal-photo {
+    margin: 0 10px;
+    left: 150px;
+    height: 25%;
+    width: 25%;
+    border: 3px var(--background-color-one) solid;
+    border-radius: 5%;
+}
+/* end of styling section for about me */
+
+/* styling section for 'my work' */
+.work {
+    margin-top: 25px;
+}
+.work h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    border-bottom: 3px var(--background-color-one) solid;
+}
+.run-buddy {
+    position: relative;
+}
+.run-buddy img {
+    margin: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border: 3px var(--background-color-one) solid;
+    border-radius: 2.5%;
+}
+.run-buddy img:hover {
+    border: 5px var(--background-color-one) solid;
+    box-shadow: 5px 5px var(--primary-color);
+}
+.run-buddy h3 {
+    font-size: medium;
+    padding: 0 5px;
+    background-color: rgba(150, 150, 150, .75);
+    position: absolute;
+    top: 60%;
+    left: 12.5%;
+    display: inline;
+}
+.placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
+.placeholder section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5%;
+}
+.placeholder section img {
+    width: 70%;
+    border-radius: 5%;
+}
+.placeholder section:hover {
+    background-color: var(--primary-color);
+}
+.placeholder section h3 {
+    color: darkgray;
+    font-size: x-small;
+}
+/* end of 'my work' styling section */
+
+/* contact me sytling section */
+.contact-me {
+    margin: 50px 0;
+}
+.contact-me h2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: max-content;
+    border-bottom: 3px var(--background-color-one) solid;
+}
+.contact-me ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: 25px 0;
+}
+.contact-me a {
+    text-decoration: none;
+    color: black;
+}
+.contact-me a:hover {
+    color: var(--primary-color);
+    border-bottom: 3px var(--primary-color) solid;
+}
